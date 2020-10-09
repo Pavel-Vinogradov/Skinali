@@ -1,0 +1,26 @@
+.hero {
+  background: #f1f1f1 url('../img/hero-backround.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 270px;
+
+  &__title {
+    font-size: 30px;
+    font-weight: 400;
+    max-width: 262px;
+    margin-bottom: 47px;
+  }
+
+  &__subtitle {
+    @include bold;
+    font-size: 30px;
+    margin-bottom: 67px;
+  }
+
+  &__btn {
+
+    display: block;
+    color: white;
+    padding: 25px 44px;
+  }
+}

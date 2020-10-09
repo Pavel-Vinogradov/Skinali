@@ -31,8 +31,7 @@ ul {
   margin: 0 auto;
 }
 
-.btn--blue
-{
+.btn--blue {
   background-color: #507fe1;
 }
 
@@ -51,3 +50,20 @@ input[type=radio].visually-hidden {
   white-space: nowrap;
   width: 1px;
 }
+
+.btn {
+  transition: .5s ease-in;
+  vertical-align: top;
+  cursor: pointer;
+  font: inherit;
+  border: 0;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include bold;
+  transition: .5s ease-in;
+  vertical-align: top;
+}
+
+ 

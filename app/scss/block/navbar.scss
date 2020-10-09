@@ -1,0 +1,90 @@
+ .navbar {
+   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   z-index: 99;
+   background-color: white;
+
+   &-block {
+     min-height: 80px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+
+
+
+   // .navbar__logo
+
+
+
+   // .navbar__mobile
+
+   &__mobile {
+     text-align: right;
+   }
+
+   // .navbar__phone
+
+   &__phone {
+     display: block;
+     color: black;
+     font-size: 19px;
+     text-transform: uppercase;
+     @include bold;
+     padding-bottom: 5px;
+   }
+
+   // .navbar__work-time
+
+   &__work-time {
+     display: inline-block;
+     color: #6b6b6b;
+     font-size: 14px;
+   }
+
+   // .navbar__email
+
+   &__email {
+     display: block;
+     color: #6b6b6b;
+     font-size: 14px;
+   }
+
+   // .navbar__btn
+
+   &__btn {
+     padding: 19px 22px;
+     border: 2px solid #507fe1;
+     color: #507fe1;
+
+   }
+ }
+
+
+
+
+ .logo {
+
+   // .logo__text
+
+   &__text {
+     display: block;
+     font-size: 18px;
+     text-transform: uppercase;
+     padding-bottom: 5px;
+     font-weight: 700;
+     @include bold;
+   }
+
+   // .logo__description
+
+   &__description {
+
+     display: block;
+     color: #6b6b6b;
+     font-size: 14px;
+   }
+ }
