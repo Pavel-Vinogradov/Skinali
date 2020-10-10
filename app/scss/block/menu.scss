@@ -5,8 +5,7 @@ display: none;
   left: 0;
   width: 100%;
   z-index: 0;
-  // visibility: hidden;
-  transition: 0.2s;
+   transition: 0.2s;
 
   &-nav {
 
@@ -22,7 +21,7 @@ display: none;
   }
 
   &__item {
-    padding: 16px 0;
+    padding: 14px 0;
   }
 
   &__link {
@@ -30,6 +29,12 @@ display: none;
     font-size: 17px;
     color: white;
     line-height: 25px;
+    padding: 16px 20px;
+    &:hover
+    {
+      background-color: rgba($color: white, $alpha: 0.4) ;
+    }
+
   }
 
   &__button {
@@ -65,10 +70,57 @@ display: none;
  .btn--active
  {
   background-color: #4370ce;
-  
- }
+   }
 
  .line--active
  {
    background-color:white;
+ }
+
+
+ @media screen and (max-width: 1199px) and (min-width: 992px)
+
+ {
+  .menu {
+    &__link{
+      padding: 16px 5px;
+    }
+  }
+ }
+ @media screen and (min-width:768px) and (max-width:991px)
+{
+  .menu {
+    &__item{
+      padding: 10px 0;
+    }
+    &__link{
+      padding: 14px 5px;
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  .menu{ 
+   
+     &__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     }
+ 
+  }}
+
+
+ @media (max-width: 576px)
+ {
+  .menu
+  {
+    top: 60px;
+    &__button {
+      height: 65px;
+  }
+  }
+
  }
