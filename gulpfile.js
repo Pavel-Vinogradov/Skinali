@@ -188,7 +188,7 @@ gulp.task('img', function () {
       })
     ]))
 
-    .pipe(gulp.dest(path.build.img))
+    .pipe(gulp.dest(path.build.img));
 
 
 });
