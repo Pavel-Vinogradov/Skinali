@@ -33,6 +33,7 @@ ul {
 
 .btn--blue {
   background-color: #507fe1;
+  color: white;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -66,28 +67,35 @@ input[type=radio].visually-hidden {
   vertical-align: top;
 }
 
- 
+.bg {
+  background-color: #f1f1f1;
+}
 
+.input {
+  height: 60px;
+  padding-left: 30px;
+  border: 1px solid #dddddd;
+  outline-color: #507fe1;
 
+}
 
-@media screen and (min-width:992px) and (max-width:1199px)
-{
-  .container  {
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .container {
     max-width: 960px;
   }
 }
 
 
 
-@media screen and (min-width:768px) and (max-width:991px)
-{
-  .container  {
-    max-width: 750px;}
+@media screen and (min-width:768px) and (max-width:991px) {
+  .container {
+    max-width: 750px;
+  }
 }
 
-@media screen and (max-width:767px)
-{
-  .container  {
+@media screen and (max-width:767px) {
+  .container {
     max-width: 100%;
-    padding: 0 20px;}
+    padding: 0 20px;
+  }
 }
