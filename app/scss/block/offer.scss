@@ -59,6 +59,10 @@
     display: flex;
     align-items: center;
     margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   // .form__label
@@ -92,7 +96,7 @@
 
   display: flex;
   align-items: center;
- 
+
   &::before {
     content: '';
     display: inline-block;
@@ -132,7 +136,7 @@
     &__block {
       background: none;
       padding: 40px;
-      background-color:white;
+      background-color: white;
       margin-top: -350px;
     }
 
@@ -157,3 +161,6 @@
     }
   }
 }
+
+
+@media screen and (max-width:576px) {}
