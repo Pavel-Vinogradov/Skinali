@@ -97,6 +97,20 @@ input[type=radio].visually-hidden {
   }
 }
 
+
+.button-fitting {
+  color: #507fe1;
+  background-color: #ffffff;
+}
+
+.button-like {
+  padding-top: 5px;
+  background-color: #507fe1;
+  height: 30px;
+  width: 30px;
+  border: none;
+}
+
 @media screen and (min-width:992px) and (max-width:1199px) {
   .container {
     max-width: 960px;

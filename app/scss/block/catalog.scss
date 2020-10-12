@@ -6,7 +6,7 @@
    &-block {
      display: flex;
      flex-wrap: wrap;
-     justify-content: space-between;
+     justify-content: space-around;
    }
 
    &-card {
@@ -15,7 +15,17 @@
      position: relative;
      box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
      overflow: hidden;
+
+     &:hover {
+       box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.6);
+     }
+
      // .catalog-card__img
+     &:hover .catalog-card__buttons {
+
+       transform: translateY(0);
+       opacity: 1;
+     }
 
      &__img {
        display: block;
@@ -38,10 +48,89 @@
        }
 
      }
+
+     &__buttons {
+       position: absolute;
+       bottom: 0;
+       right: 0;
+       display: flex;
+       transition: 0.2s;
+       opacity: 0;
+       outline: none;
+       border: none;
+       transform: translateY(100%);
+     }
+
+     &__button {
+
+       font-size: 11px;
+       border: none;
+       text-transform: uppercase;
+       padding: 10px;
+       height: 30px;
+
+     }
    }
 
+   &-link {
+     text-align: center;
+     margin-top: 60px;
+
+
+     &__btn {
+
+       margin-bottom: 24px;
+       padding: 29px 32px;
+     }
+   }
+
+   &__description {
+     font-size: 16px;
+   }
  }
 
  .catalog__card {
    margin-bottom: 30px;
+ }
+
+ @media (max-width: 1399px) {
+   .catalog-card {
+     max-width: 500px;
+   }
+
+   .catalog-block {
+
+     justify-content: space-around;
+   }
+ }
+
+ @media (max-width: 1259px) {
+   .catalog-card {
+     max-width: 480px;
+   }
+
+   .catalog-block {
+
+     justify-content: space-around;
+   }
+ }
+
+ @media (max-width: 1199px) {
+   .catalog-card {
+     max-width: 500px;
+   }
+
+   .catalog-block {
+
+     justify-content: center;
+   }
+
+ }
+
+
+ @media (max-width: 576px) {
+   .catalog-card__tag {
+     display: none;
+   }
+
  }
