@@ -84,8 +84,12 @@
      flex-direction: column;
    }
 
-   .blog__title{
-    text-align: center;
+   .blog__title {
+     text-align: center;
    }
 
+
+  .blog-card__img img {
+     max-width: none;
+   }
  }
