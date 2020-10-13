@@ -16,15 +16,16 @@
     font-size: 25px;
     @include bold;
     text-transform: uppercase;
-
-
+    margin-bottom: 15px;
   }
 
   // .offer__subtitle
 
   &__subtitle {
+    display: block;
     font-size: 21px;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
+    max-width: 750px;
   }
 
   // .offer__form
@@ -86,10 +87,18 @@
     height: 60px;
   }
 
+  &__policy {
+    width: 320px;
+    display: block;
+    margin-left: 60px;
+  }
 }
 
 
-
+.bg--secondary {
+  background: url('../img/bg-offer-second.png')no-repeat center right;
+  background-size: contain;
+}
 
 
 .label--square {
@@ -127,6 +136,27 @@
   }
 }
 
+@media (max-width: 991px) {
+  .offer-block {
+    background: none;
+    background-color: #ffffff;
+    padding: 40px;
+  }
+
+  .form__row {
+    flex-direction: column;
+  }
+
+  .form__row--checkbox {
+    flex-direction: row;
+  }
+
+  .form__group {
+
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
 
 @media screen and (max-width:768px) {
 

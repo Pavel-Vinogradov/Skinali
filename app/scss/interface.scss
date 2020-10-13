@@ -71,6 +71,14 @@ input[type=radio].visually-hidden {
   @include bold;
   transition: .5s ease-in;
   vertical-align: top;
+
+  &:hover {
+    background-color: rgba($color:#2c4e96, $alpha: 1);
+
+    &:active {
+      color: lightcoral;
+    }
+  }
 }
 
 .bg {
@@ -106,8 +114,8 @@ input[type=radio].visually-hidden {
   background-color: #507fe1;
   color: #ffffff;
   text-decoration: none;
-  &:hover
-  {
+
+  &:hover {
     cursor: pointer;
   }
 }

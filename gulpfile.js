@@ -165,7 +165,7 @@ gulp.task('fontsStyle', function (params) {
 );
 
 gulp.task('img', function () {
-  gulp.src('app/img/*')
+  gulp.src('app/img/*/*')
     .pipe(imagemin([
       imagemin.gifsicle({
         interlaced: true

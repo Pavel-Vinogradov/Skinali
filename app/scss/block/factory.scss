@@ -1,0 +1,20 @@
+ .factory {
+   padding-top: 0px;
+ }
+
+ .factory-block {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   // .factory-block__image
+
+ 
+
+   // .factory-block__text
+
+   &__text {
+     margin-left: 70px;
+     flex-basis: 50%;
+     font-size: 20px;
+   }
+ }
