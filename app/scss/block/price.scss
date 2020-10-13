@@ -12,7 +12,7 @@
    }
 
    &-card {
-   
+
      &:hover .price-card__btn {
        z-index: 1;
        bottom: -80px;
@@ -22,8 +22,7 @@
      background-color: white;
      position: relative;
      // .price-card__img
-
-     &__img {}
+ 
 
      // .price-card__text
 
@@ -83,4 +82,14 @@
  }
 
 
- @media (max-width: 576px) {}
+ @media (max-width: 576px) {
+
+   .price-card__pricetag {
+     flex-direction: column;
+     align-items: center;
+   }
+   .price-card__btn  
+   {
+  display: none;
+   }
+ }
