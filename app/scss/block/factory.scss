@@ -8,7 +8,7 @@
    justify-content: center;
    // .factory-block__image
 
- 
+
 
    // .factory-block__text
 
@@ -16,5 +16,15 @@
      margin-left: 70px;
      flex-basis: 50%;
      font-size: 20px;
+   }
+ }
+
+
+
+ @media screen and (max-width:991px) {
+   .factory-block__text {
+     margin-left: 0px;
+     margin-left: 0px;
+     flex-basis: 100%;
    }
  }

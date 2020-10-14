@@ -81,6 +81,10 @@
     width: 100%;
   }
 
+  &__select {
+    outline: none;
+    cursor: pointer;
+  }
 
   &__btn {
     width: 100%;
@@ -98,6 +102,7 @@
 .bg--secondary {
   background: url('../img/bg-offer-second.png')no-repeat center right;
   background-size: contain;
+
 }
 
 
@@ -156,9 +161,21 @@
     flex-basis: 100%;
     width: 100%;
   }
+
+  .form__policy {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (min-widht:577px) and (max-width:768px) {
+
+
+
+  .bg--secondary {
+    margin-top: -250px;
+  }
 
   .offer {
 
@@ -168,29 +185,60 @@
       padding: 40px;
       background-color: white;
       margin-top: -350px;
+
+
     }
 
+    .form {
+      &__row {
+        flex-direction: column;
+      }
+
+      &__row--checkbox {
+        flex-direction: row;
+      }
+
+      &__group {
+        flex-basis: 100%;
+        width: 100%;
+      }
+
+      &__input {
+        margin-bottom: 20px;
+      }
+    }
   }
 
-  .form {
-    &__row {
-      flex-direction: column;
-    }
-
-    &__row--checkbox {
-      flex-direction: row;
-    }
-
-    &__group {
-      flex-basis: 100%;
-      width: 100%;
-    }
-
-    &__input {
-      margin-bottom: 20px;
-    }
-  }
 }
 
+@media screen and (max-width:576px) {
+  .offer {
 
-@media screen and (max-width:576px) {}
+    // .offer__block
+    &__block {
+      background: none;
+      padding: 40px;
+      background-color: white;
+      margin-top: -350px;
+
+
+    }
+  }
+
+  .bg--secondary {
+    margin-top: -100px;
+  }
+
+  .form__row--checkbox {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .form__btn {
+    white-space: normal;
+  }
+
+  .label--square {
+    margin-bottom: 20px;
+  }
+}

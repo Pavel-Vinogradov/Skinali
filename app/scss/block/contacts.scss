@@ -39,3 +39,11 @@
      text-align: center;
    }
  }
+
+
+ @media screen and (max-width: 768px) {
+   .contacts-block__item {
+     width: 100%;
+     margin-bottom: 30px;
+   }
+ }
