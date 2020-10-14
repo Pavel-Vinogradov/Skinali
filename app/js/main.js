@@ -31,3 +31,12 @@ $('.before-slider').slick({
   prevArrow: $('.arrow-left'),
   nextArrow: $('.arrow-right'),
 });
+
+
+$('.reviews-slider').slick({
+  draggable: false,
+  dots: true,
+  dotsClass: 'before-slider__dots',
+  prevArrow: $('.review-arrow-left'),
+  nextArrow: $('.review-arrow-right'),
+});
